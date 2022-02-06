@@ -33,7 +33,7 @@ def send_assignment(data: dict) -> None:
     webhook.remove_embeds()
 
     embed = DiscordEmbed(title=f"New Assignment: {data['name']}", color="3984e6")
-    embed.set_author(name="Wenk Bot")
+    embed.set_author(name="Wenk Bot", url="https://github.com/ethansocal/wenk-bot")
     embed.add_embed_field(name="Points Possible", value=str(data["points_possible"]))
     embed.add_embed_field(
         name="Due At",
